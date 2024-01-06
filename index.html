@@ -1,23 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon"href="/assets/images/svg/logo.svg">
+    <title>Trippy Goat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+     <!-- Primary Meta Tags -->
+  <meta name="description"
+    content="Trippy Goat" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="./assets/img/webp/Page-Thumbnail.webp" />
+  <meta property="og:title" content="Meet Porofessor" />
+  <meta property="og:description"
+    content="Trippy Goat" />
+  <meta property="og:image" content="./assets/imgages/png/deer_img.png" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="./assets/img/webp/Page-Thumbnail.webp" />
+  <meta property="twitter:title" content="Meet Porofessor" />
+  <meta property="twitter:description"
+    content="Trippy Goat" />
+  <meta property="twitter:image" content="./assets/imgages/png/deer_img.png" />
+  </head>
+  <body class="bg_body">
+    <!-- === HERO SECTION ===== -->
+    <div class="bg_hero">
+      <header class="bg_black py-2 mb-4">
+        <div class="my_container">
+          <nav class="d-flex justify-content-between align-items-center">
+            <a
+              class="d-flex flex-column justify-content-center align-items-center"
+              href="#"
+            >
+              <img class="mb-1" src="/assets/images/svg/logo.svg" alt="logo" />
+              <p class="text_white fs_xsm fw-normal mb-0 ff_Black_Han_Sans">
+                Trippy Goat
+              </p>
+            </a>
+            <div class="d-flex align-items-center gap-4">
+              <ul
+                class="d-flex align-items-center justify-content-center flex-lg-row flex-column gap-3 mb-0 me-3 sm-navbar p-0"
+                id="nav"
+              >
+                <li class="me-1">
+                  <a
+                    onclick="navresponsive()"
+                    class="text_white fs_sm fw-normal lh_100 ff_M_PLUS_1 mb-0"
+                    href="#flight"
+                    >Home</a
+                  >
+                </li>
+                <li class="me-1">
+                  <a
+                    onclick="navresponsive()"
+                    class="text_white fs_sm fw-normal lh_100 ff_M_PLUS_1 mb-0"
+                    href="#schedule"
+                    >About</a
+                  >
+                </li>
+                <li class="me-1">
+                  <a
+                    onclick="navresponsive()"
+                    class="text_white fs_sm fw-normal lh_100 ff_M_PLUS_1 mb-0"
+                    href="#passengers"
+                    >Team</a
+                  >
+                </li>
+                <li class="me-1">
+                  <a
+                    onclick="navresponsive()"
+                    class="text_white fs_sm fw-normal lh_100 ff_M_PLUS_1 mb-0"
+                    href="#orders"
+                    >RoadMap
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onclick="navresponsive()"
+                    class="text_white fs_sm fw-normal lh_100 ff_M_PLUS_1 mb-0"
+                    href="#orders"
+                    >FAQ
+                  </a>
+                </li>
+                <li>
+                  <button
+                    onclick="navresponsive()"
+                    class="d-sm-none d-block ms-2 text_white fs_sm fw-normal lh_150 ff_Black_Han_Sans mb-0 common_btn"
+                  >
+                    Connect Wallet
+                  </button>
+                </li>
+              </ul>
+              <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="/assets/images/svg/instagram_icon.svg"
+                    alt="instagram_icon"
+                  />
+                  <img
+                    src="/assets/images/svg/discord_icon.svg"
+                    alt="discord_icon"
+                  />
+                  <img
+                    src="/assets/images/svg/twitter_icon.svg"
+                    alt="twitter_icon"
+                  />
+                </div>
+                <button
+                  class="d-sm-block d-none ms-2 text_white fs_sm fw-normal lh_150 ff_Black_Han_Sans mb-0 common_btn"
+                >
+                  Connect Wallet
+                </button>
+              </div>
+            </div>
+            <label
+              for="menuicon"
+              onclick="navresponsive()"
+              class="d-lg-none"
+              id="change"
+            >
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span>
+            </label>
+          </nav>
+        </div>
+      </header>
+      <div class="my_container">
+        <div class="d-flex justify-content-center mb-4 pb-3">
+          <img class="w_sm_100" src="/assets/images/png/deer_img.png" alt="deer_img" />
+        </div>
+      </div>
+    </div>
+    <div class="my_container mb-5 pb-lg-5">
+      <h1
+        class="fs_5xl fw-normal text_white ff_Black_Han_Sans lh_100 mb-3 text-center"
+      >
+        Trippy Goat
+      </h1>
+      <p
+        class="fs_sm fw-normal ff_M_PLUS_1 lh_100 text_white max_w_565 mx-auto text-center mb-4 pb-2"
+      >
+        Trippy Goats is a limited collection of 5656 Psychedelic goats, randomly
+        generated from over 40 hand drawn traits. Each goat comes with ownership
+        and commercial usage rights.
+      </p>
+      <div class="d-flex justify-content-center mb-3">
+        <button
+          class="common_btn fs_lg text_white ff_Black_Han_Sans lh_150 mx-auto mb-0"
+        >
+          Mint Now
+        </button>
+      </div>
+    </div>
 
+    <!-- ======= ABOUT US SECTION ======== -->
+    <section class="py-5">
+      <div class="my_container">
+        <div class="row align-items-center">
+          <div
+            class="col-lg-6 d-flex justify-content-center justify-content-lg-start mb-lg-0 mb-4"
+          >
+            <img class="w_sm_100" src="/assets/images/png/about_us_deer.png" alt="deers_img" />
+          </div>
+          <div class="col-lg-6">
+            <h2
+              class="fs_4xl fw-normal text_white ff_Black_Han_Sans lh_100 mb-2 pb-1"
+            >
+              About Us
+            </h2>
+            <p
+              class="text_white opacity_70 lh_160 fw-normal fs_sm ff_M_PLUS_1 mb-4 pb-3"
+            >
+              Hi goaties call me legion with a pen. From an early age I was
+              influenced by my selfless loving mother who inspired me to become
+              a pet and art lover. As young as I was then, My mother would read
+              goat story to me even though I didn't understand it. During the
+              course of time I have played countless video games, watched movies
+              and read books on pets particularly on goat.I made this art to
+              portray my illustration of the psychedelic goats and I hope you
+              can appreciate that everyone has a history. With regards to why
+              non-fungibles.
+            </p>
+            <button
+              class="fs_sm fw-normal lh_150 text_white ff_Black_Han_Sans common_btn"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= ROADMAP SECTION ======= -->
+    <section class="position-relative">
+      <img class="roadmap_left_abs d-md-block d-none" src="/assets/images/png/roadmap_left_grass.png" alt="grass">
+      <img class="roadmap_right_abs d-md-block d-none" src="/assets/images/png/roadmap_right_grass.png" alt="grass">
+      <div class="my_container">
+        <h2
+          class="fs_4xl fw-normal text_white ff_Black_Han_Sans lh_100 text-center mb-5 pb-5"
+        >
+          Roadmap
+        </h2>
+        <div
+          class="d-flex justify-content-center flex-column align-items-center roadmap"
+        >
+          <div class="roadmap_box mb_30 position-relative">
+            <div class="roadmap_box_dot dot_abs1"></div>
+            <h3
+              class="text_orange ff_Black_Han_Sans fs_3xl fw-normal lh_100 mb_10"
+            >
+              10%
+            </h3>
+            <h2
+              class="fs_xlg ff_Black_Han_Sans text_white lh_100 fw-normal mb_10"
+            >
+              Giveaway of Goat NFT
+            </h2>
+            <p
+              class="ff_M_PLUS_1 fs_sm fw-normal lh_160 text_white opacity_70 mb-0"
+            >
+              Feugiat felis, egestas cursus et ut lacus viverra. Rhoncus ornare
+              tortor sociis vulputate arcu pellentesque eu ornare tempus. Et mi
+              arcu quam tellus feugiat quisque urna velit.
+            </p>
+          </div>
+          <div class="roadmap_box mb_30 position-relative">
+            <div class="roadmap_box_dot dot_abs2"></div>
 
+            <h3
+              class="text_orange ff_Black_Han_Sans fs_3xl fw-normal lh_100 mb_10"
+            >
+              50%
+            </h3>
+            <h2
+              class="fs_xlg ff_Black_Han_Sans text_white lh_100 fw-normal mb_10"
+            >
+              Merch store
+            </h2>
+            <p
+              class="ff_M_PLUS_1 fs_sm fw-normal lh_160 text_white opacity_70 mb-0"
+            >
+              Adipiscing vehicula dui sollicitudin venenatis. A feugiat iaculis
+              amet magna. Odio elementum, purus egestas convallis et vulputate.
+              Dictumst vitae nulla aliquam, vivamus nunc. Volutpat nunc non
+              platea mauris sem dui scelerisque.
+            </p>
+          </div>
+          <div class="roadmap_box position-relative">
+            <div class="roadmap_box_dot dot_abs2"></div>
+            <h3
+              class="text_orange ff_Black_Han_Sans fs_3xl fw-normal lh_100 mb_10"
+            >
+              100%
+            </h3>
+            <h2
+              class="fs_xlg ff_Black_Han_Sans text_white lh_100 fw-normal mb_10"
+            >
+              Charity donation
+            </h2>
+            <p
+              class="ff_M_PLUS_1 fs_sm fw-normal lh_160 text_white opacity_70 mb-0"
+            >
+              Condimentum tristique sit pretium ipsum. Et egestas venenatis
+              consectetur ornare ipsum elementum nulla imperdiet imperdiet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== ALL DEERS ====== -->
+    <div class="overflow-x-scroll d-flex max_w_1440 mx-auto my-5 pt-5">
+<div class="d-flex flex-column gap_29">
+  <img src="/assets/images/png/deer1.png" alt="deer">
+  <img src="/assets/images/png/deer2.png" alt="deer">
+  <img src="/assets/images/png/deer3.png" alt="deer">
+</div>
+<div class="d-flex flex-column gap_29">
+  <img src="/assets/images/png/deer4.png" alt="deer">
+  <img src="/assets/images/png/deer5.png" alt="deer">
+  <img src="/assets/images/png/deer6.png" alt="deer">
+</div>
+<div class="d-flex flex-column gap_29">
+  <img src="/assets/images/png/deer7.png" alt="deer">
+  <img src="/assets/images/png/deer8.png" alt="deer">
+  <img src="/assets/images/png/deer9.png" alt="deer">
+</div>
+<div class="d-flex flex-column gap_29">
+  <img src="/assets/images/png/deer10.png" alt="deer">
+  <img src="/assets/images/png/deer11.png" alt="deer">
+  <img src="/assets/images/png/deer12.png" alt="deer">
+</div>
+<div class="d-flex flex-column gap_29">
+  <img src="/assets/images/png/deer13.png" alt="deer">
+  <img src="/assets/images/png/deer14.png" alt="deer">
+  <img src="/assets/images/png/deer15.png" alt="deer">
+</div>
+<div class="d-flex flex-column gap_29">
+  <img src="/assets/images/png/deer16.png" alt="deer">
+  <img src="/assets/images/png/deer17.png" alt="deer">
+  <img src="/assets/images/png/deer18.png" alt="deer">
+</div>
+<div class="d-flex flex-column gap_29">
+  <img src="/assets/images/png/deer19.png" alt="deer">
+  <img src="/assets/images/png/deer20.png" alt="deer">
+  <img src="/assets/images/png/deer21.png" alt="deer">
+</div>
+    </div>
+    <!-- ===== MINT NFT ======== -->
+    <section class="py-5 mint_nft_bg">
+      <div class="my_container my-5 pb-5">
+        <h2
+          class="fs_4xl fw-normal text_white ff_Black_Han_Sans lh_100 mb-4 pb-2 text-center"
+        >
+          Mint NFT
+        </h2>
+        <div class="row align-items-center">
+          <div
+            class="col-lg-6 d-flex align-items-center justify-content-lg-start justify-content-center mb-lg-0 mb-4"
+          >
+            <img class="w_sm_100" src="/assets/images/png/nft_deer.png" alt="deer" />
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="mint_nft_box d-flex flex-column align-items-center">
+              <div class="d-flex align-items-center gap-4 mb-4 pb-1">
+                <img
+                  class="pe-2"
+                  src="/assets/images/svg/minus_icon.svg"
+                  alt="minus_icon"
+                />
+                <p
+                  class="fs_xxl text_white fw-normal ff_Black_Han_Sans lh_100 mb-0"
+                >
+                  0 / 5656
+                </p>
+                <img
+                  class="ps-2 ms-3"
+                  src="/assets/images/svg/plus_icon.svg"
+                  alt="plus_icon"
+                />
+              </div>
+              <p
+                class="fw-semibold lh_100 ff_M_PLUS_1 fs_md text_white text-center opacity_80 mb-2"
+              >
+                Max 4 NFTs per transaction
+              </p>
+              <p
+                class="fw-semibold lh_100 ff_M_PLUS_1 fs_md text_white text-center opacity_80 mb-5 pb-1"
+              >
+                75 ADA per NFT
+              </p>
+              <button
+                class="common_btn fs_sm fw-normal lh_150 ff_Black_Han_Sans text_white"
+              >
+                Mint Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== TEAM ======== -->
+    <section class="pb-5 pt-3">
+      <div class="my_container mb-5 pb-5">
+        <h2
+          class="fs_4xl fw-normal text_white ff_Black_Han_Sans lh_100 mb-5 pb-2 text-center"
+        >
+          Team
+        </h2>
+        <div
+          class="d-flex justify-content-center align-items-center flex-wrap gap_40 pt-1 mb-lg-4"
+        >
+          <div class="mb-0">
+            <img src="/assets/images/png/vilar_img.png" alt="vilar_img" />
+            <div class="name_box py-3 px-3 name_box_radius1">
+              <h3
+                class="fw-normal lh_100 text_white text-uppercase ff_Black_Han_Sans fs_lg mb-1 text_shadow text-center"
+              >
+                Vilar
+              </h3>
+              <p
+                class="fw-normal fs_sm lh_160 ff_M_PLUS_1 text_white opacity_80 text-center mb-0"
+              >
+                Founder & Developer
+              </p>
+            </div>
+          </div>
+          <div class="mb-0">
+            <img src="/assets/images/png/arwen_img.png" alt="arwen_img" />
+            <div class="name_box py-3 px-3">
+              <h3
+                class="fw-normal lh_100 text_white text-uppercase ff_Black_Han_Sans fs_lg mb-1 text_shadow text-center"
+              >
+                Arwen
+              </h3>
+              <p
+                class="fw-normal fs_sm lh_160 ff_M_PLUS_1 text_white opacity_80 text-center mb-0"
+              >
+                Co-founder & Designer
+              </p>
+            </div>
+          </div>
+          <div class="mb-0">
+            <img src="/assets/images/png/john.png" alt="john_img" />
+            <div class="name_box py-3 px-3 name_box_radius2">
+              <h3
+                class="fw-normal lh_100 text_white text-uppercase ff_Black_Han_Sans fs_lg mb-1 text_shadow text-center"
+              >
+                John
+              </h3>
+              <p
+                class="fw-normal fs_sm lh_160 ff_M_PLUS_1 text_white opacity_80 text-center mb-0"
+              >
+                Developer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= FAQS SECTION === -->
+    <section class="pb-5 position-relative">
+      <img class="faq_left_abs d-md-block d-none" src="/assets/images/png/faq_grass_left.png" alt="grass">
+      <img class="faq_right_abs d-md-block d-none" src="/assets/images/png/faq_grass_right.png" alt="grass">
+      <div class="my_container">
+        <h2
+          class="fs_4xl fw-normal text_white ff_Black_Han_Sans lh_100 mb-5 pb-4 text-center"
+        >
+          FAQs
+        </h2>
+        <div class="d-flex justify-content-center">
+          <div class="accordion accordion_width" id="accordionExample">
+            <div class="d-flex justify-content-center mb_20">
+              <div class="accordion-item accordion_width">
+                <h2
+                  class="accordion-header d-flex justify-content-between"
+                  id="headingOne"
+                >
+                  <button
+                    class="accordion-button ff_M_PLUS_1 fs_md fw-bold lh_100 text_white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    What are Trippy Goats?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p
+                      class="ff_M_PLUS_1 fs_sm fw-normal lh_160 text_white opacity_80 mb-0"
+                    >
+                      Trippy goats are 5656 goats looking to trip with everyone
+                      in the metaverse. This genesis collection will give
+                      exclusive access to the trippyverse. The mission is to
+                      create a community who seek the peak, while finding a
+                      peace of mind. Save the world. Lets invade the blockchain
+                      farm while trippin
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb_20">
+              <div class="accordion-item accordion_width">
+                <h2
+                  class="accordion-header d-flex justify-content-between"
+                  id="headingTwo"
+                >
+                  <button
+                    class="accordion-button ff_poppins fs_md fw-bold lh_100 text_white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo"
+                  >
+                    When will I be able to mint a trippy Goat NFT?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p
+                      class="ff_poppins fs_sm fw-normal lh_160 text_white opacity_80 mb-0"
+                    >
+                      Trippy goats are 5656 goats looking to trip with everyone
+                      in the metaverse. This genesis collection will give
+                      exclusive access to the trippyverse. The mission is to
+                      create a community who seek the peak, while finding a
+                      peace of mind. Save the world. Lets invade the blockchain
+                      farm while trippin
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb_20">
+              <div class="accordion-item accordion_width">
+                <h2
+                  class="accordion-header d-flex justify-content-between"
+                  id="headingThree"
+                >
+                  <button
+                    class="accordion-button ff_poppins fs_md fw-bold lh_100 text_white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="true"
+                    aria-controls="collapseThree"
+                  >
+                    Why do I have to own a trippy Goat NFT?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p
+                      class="ff_poppins fs_sm fw-normal lh_160 text_white opacity_80 mb-0"
+                    >
+                      Trippy goats are 5656 goats looking to trip with everyone
+                      in the metaverse. This genesis collection will give
+                      exclusive access to the trippyverse. The mission is to
+                      create a community who seek the peak, while finding a
+                      peace of mind. Save the world. Lets invade the blockchain
+                      farm while trippin
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb_20">
+              <div class="accordion-item accordion_width">
+                <h2
+                  class="accordion-header d-flex justify-content-between"
+                  id="headingFour"
+                >
+                  <button
+                    class="accordion-button ff_M_PLUS_1 fs_md fw-bold lh_100 text_white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="true"
+                    aria-controls="collapsefour"
+                  >
+                    Do I need to know something else?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p
+                      class="ff_M_PLUS_1 fs_sm fw-normal lh_160 text_white opacity_80 mb-0"
+                    >
+                      Trippy goats are 5656 goats looking to trip with everyone
+                      in the metaverse. This genesis collection will give
+                      exclusive access to the trippyverse. The mission is to
+                      create a community who seek the peak, while finding a
+                      peace of mind. Save the world. Lets invade the blockchain
+                      farm while trippin
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="accordion-item accordion_width">
+                <h2
+                  class="accordion-header d-flex justify-content-between"
+                  id="headingFive"
+                >
+                  <button
+                    class="accordion-button ff_M_PLUS_1 fs_md fw-bold lh_100 text_white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="true"
+                    aria-controls="collapseFive"
+                  >
+                    Who’s the Team?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p
+                      class="ff_M_PLUS_1 fs_sm fw-normal lh_160 text_white opacity_80 mb-0"
+                    >
+                      Trippy goats are 5656 goats looking to trip with everyone
+                      in the metaverse. This genesis collection will give
+                      exclusive access to the trippyverse. The mission is to
+                      create a community who seek the peak, while finding a
+                      peace of mind. Save the world. Lets invade the blockchain
+                      farm while trippin
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== FOOTER ========== -->
+    <div class="position-relative">
+      <img class="left_grass_footer_abs d-md-block d-none" src="/assets/images/png/footer_grass.png" alt="footer_grass">
+      <img class="right_grass_footer_abs d-md-block d-none" src="/assets/images/png/footer_grass_right.png" alt="footer_grass">
+    <footer class="py-5">
+      <div class="my_container mt-5 pt-5">
+        <div class="d-flex flex-column align-items-center mb_30">
+          <img src="/assets/images/svg/footer_logo.svg" alt="footer_logo" />
+          <h3 class="fw-normal lh_100 ff_Black_Han_Sans text_white fs_xl mt-1">
+            Trippy Goat
+          </h3>
+        </div>
+        <p
+          class="fs_sm fw-normal lh_160 ff_M_PLUS_1 text_white mx-auto max_w_500 text-center mb_30"
+        >
+          Vitae cras pellentesque amet, pretium ut consectetur pretium orci
+          arcu. Aenean turpis ipsum nunc adipiscing fusce enim, eget rhoncus at.
+        </p>
+        <div class="d-flex align-items-center gap_10 justify-content-center mb-5 pb-3">
+          <img class="cursor_pointer"
+            src="/assets/images/svg/instagram_icon.svg"
+            alt="instagram_icon"
+          />
+          <img class="cursor_pointer" src="/assets/images/svg/discord_icon.svg" alt="discord_icon" />
+          <img class="cursor_pointer" src="/assets/images/svg/twitter_icon.svg" alt="twitter_icon" />
+        </div>
+      </div>
+    </footer>
+    <div class="footer_line"></div>
+    <p class="fs_sm fw-normal lh_160 text_white opacity_70 text-center ff_M_PLUS_1 py_12 mb-0">copyright@2022</p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-</body>
+    <script>
+      const a = document.getElementById("nav");
+      const b = document.getElementById("change");
+      function navresponsive() {
+        a.classList.toggle("show");
+        document.body.classList.toggle("overflow_hidden");
+        b.classList.toggle("change");
+      }
+    </script>
+  </body>
 </html>
